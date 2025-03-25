@@ -1,10 +1,38 @@
 # Getting Started with Create React App
+# Interactive Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+# 📝 Project Description
+This is a simple quiz application where users can answer multiple-choice questions, check their answers, and track their score. The app dynamically updates questions and provides a final result at the end.
+
+
+
+# 🔧 Functions Used 
+- 1️⃣ checkAns(e, ans) :
+
+- Checks if the selected answer is correct.
+- Updates the score if the answer is correct.
+- Highlights the correct or wrong answer.
+
+- 2️⃣ next():
+
+- Moves to the next question.
+- Prevents moving forward unless an answer is selected.
+- Resets the answer highlights for the new question.
+
+- 3️⃣ reset()
+
+- Resets the quiz to the first question.
+- Resets the score and the answer selection state.
+
+
+
+# ⚡ Hooks Used in the Project:
+- 🔹 useState → Manages the quiz state, including the current question, score, and selection lock.
+- 🔹 useRef → References answer options to update their styles dynamically.
+
+
 
 ### `npm start`
 
